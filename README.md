@@ -42,65 +42,20 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Confluent Cloud](https://www.confluent.io/)**  
-
-  Fully managed data streaming platform built by the original creators of Apache Kafka, with cloud-native architecture, rich connectors, and enterprise features.
-
-
-
-- **[Redpanda Cloud / Serverless](https://www.redpanda.com/)**  
-
-  High-performance, Kafka-compatible streaming platform written in C++, known for simpler operations, low latency, and strong price-performance.
-
-
-
-- **[Aiven for Apache Kafka](https://aiven.io/)**  
-
-  Fully managed Kafka service with additional Aiven platform capabilities and multi-cloud support.
-
-
-
-- **[WarpStream](https://www.warpstream.com/)**  
-
-  Diskless, Kafka-protocol-compatible streaming platform built on object storage (S3, etc.), designed for lower cloud costs and simpler operations.
-
-
-
-- **[StreamNative](https://streamnative.io/)**  
-
-  Managed Apache Pulsar and Kafka-compatible offerings, including lakehouse-native streaming options.
-
-
-
-- **[Amazon MSK (Managed Streaming for Apache Kafka)](https://aws.amazon.com/msk/)**  
-
-  AWS-managed Kafka service with provisioned and serverless options tightly integrated into the AWS ecosystem.
-
-
-
-- **[Azure Event Hubs](https://azure.microsoft.com/en-us/products/event-hubs)**  
-
-  Fully managed, real-time data ingestion service with Kafka protocol support for Azure workloads.
-
-
-
-- **[Google Cloud Pub/Sub](https://cloud.google.com/pubsub)**  
-
-  Global, managed messaging and event ingestion service from Google Cloud.
-
-
-
-- **[AutoMQ, Memphis.dev, Estuary, Upsolver, and others](https://www.automq.com/)**  
-
-  Additional managed or specialized streaming platforms focusing on cost efficiency, simplicity, or specific integration patterns.
-
-
-
-- **[Other managed Kafka & streaming services](https://www.confluent.io/)**  
-
-  Offerings from Instaclustr, Upstash, Kafkaesque, and hyperscaler or specialist providers.
+| Platform | Description | Starting Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Confluent Cloud](https://www.confluent.io/)** | Fully managed data streaming platform built by Kafka creators, featuring managed Flink, Schema Registry, and enterprise connectors. | **$0.14 / eCKU-hr** (Basic tier; 1st eCKU free) + $0.05/GB data in/out + $0.08/GB-mo storage | **30-Day Free Trial** with **$400 in free credits** across clusters, connectors, and Schema Registry (no credit card required) |
+| **[Redpanda Cloud](https://www.redpanda.com/)** | High-performance, C++ Kafka-compatible engine with sub-millisecond latency, zero-JVM footprint, and built-in Data Transforms. | **$0.10 / cluster-hr** + **$0.045 / GB** ingress + **$0.04 / GB** egress + $0.09/GB-mo storage ($0.0015/partition-hr) | **30-Day Free Trial** with **$100 in free credits** ($300 credits via AWS Marketplace; no credit card required) |
+| **[Aiven for Apache Kafka](https://aiven.io/)** | Fully managed Apache Kafka service across AWS, GCP, and Azure with Karapace Schema Registry, REST proxy, and built-in monitoring. | **$35 / month** ($0.048/hr) for Developer plan; **$75 / month** ($0.10/hr) for Startup plan | **Free Forever Plan**: 1 Kafka service, 250 KiB/s ingress & egress, up to 5 topics (max 2 partitions/topic), 3-day data retention; plus **30-Day Trial** with **$300 credits** |
+| **[WarpStream](https://www.warpstream.com/)** | Diskless, Kafka-protocol streaming engine built directly on cloud object storage (S3/GCS/Azure Blob) to minimize cloud networking and disk costs. | **$0.010 / GiB** logical write throughput (first 50 TiB, steps down to $0.003/GiB); $0 cluster base fee | **$400 non-expiring trial credits** on sign-up (no credit card required; pay only underlying cloud S3/compute costs) |
+| **[StreamNative Cloud](https://streamnative.io/)** | Enterprise cloud-native messaging and streaming powered by Apache Pulsar with native Kafka protocol compatibility (KoP) and Lakehouse streaming. | **$73 / month** (~$0.10/hr) for Serverless tier + $0.06/GB ingress/egress; BYOC plans from **$365 / month** | **30-Day Free Trial** with **$200 in free credits** for Serverless and BYOC testing (no credit card required) |
+| **[Amazon MSK](https://aws.amazon.com/msk/)** | AWS-managed Kafka offering provisioned EC2-backed brokers or serverless autoscaling integrated deeply into AWS IAM and CloudWatch. | **$0.0456 / broker-hr** (`kafka.t3.small`, min 3 brokers = **$0.1368/hr** / ~$98.50/mo) + $0.10/GB-mo storage; Serverless at **$0.75 / cluster-hr** + $0.10/GB in + $0.05/GB out | **30-Day Free Trial via AWS Free Account**: **$200 in AWS credits** for new accounts (no standalone MSK free tier) |
+| **[Azure Event Hubs](https://azure.microsoft.com/en-us/products/event-hubs)** | Fully managed, real-time data ingestion service supporting Kafka 1.0+ producer/consumer APIs and AMQP protocols. | **$0.015 / hour per Throughput Unit (TU)** (1 MB/s in, 2 MB/s out) + **$0.028 per million ingress events** (Basic); Standard tier at **$0.030 / hour / TU** | **100 free concurrent AMQP connections** per namespace; plus **30-Day Free Trial** with **$200 Azure credits** via Azure Free Account |
+| **[Google Cloud Pub/Sub](https://cloud.google.com/pubsub)** | Global, fully managed messaging and stream ingestion service featuring automatic horizontal scaling and multi-zone durability. | **$40 per TiB** (~$0.04/GB) for throughput exceeding 10 GB; snapshot & retained message storage at **$0.27 / GB-month** (free first 24h) | **Free Forever Plan**: **10 GB message throughput per month** at $0 + 24-hour message retention storage; plus **90-Day Trial** with **$300 credits** on GCP |
+| **[Upstash Kafka](https://upstash.com/)** | Serverless per-request Kafka service that scales to zero with pay-per-message billing, REST APIs, and Kafka wire protocol support. | **$0.20 per 100K messages** (single-zone) / **$0.60 per 100K messages** (multi-zone) + **$0.25 / GB storage** (pay-as-you-go cap at $360/mo) | **Free Forever Plan**: Up to **10,000 messages / day** and **256 MB max storage retention** (no credit card required) |
+| **[Estuary Flow](https://estuary.dev/)** | Real-time streaming ETL and CDC pipeline platform with built-in real-time storage engine and managed connector ecosystem. | **$0.50 / GB** data moved + **$100 / month** per active connector (after initial connector allowance) | **Free Forever Plan**: Up to **10 GB / month data transfer** and **2 active connector instances**; plus **30-Day Free Trial** for Cloud plan |
+| **[AutoMQ](https://www.automq.com/)** | Cloud-first Kafka alternative replacing local broker storage with S3/EBS to eliminate cross-AZ replication network costs. | **~$0.411 / hour** cluster fee + **$0.008–$0.02 / GiB** ingress + **$0.00275–$0.0067 / GiB** egress + S3 storage ($0.005–$0.01/GiB-mo) | **30-Day Free Trial** with full cluster quota on AutoMQ Cloud / AWS Marketplace (no credit card required) |
+| **[Instaclustr for Apache Kafka](https://www.instaclustr.com/)** | Enterprise managed Apache Kafka service with SOC 2 compliance, automated operations, and SLA guarantees on AWS, GCP, and Azure. | **~$0.09 / node-hour** (~$65/node/month) management fee + underlying cloud provider compute and storage costs | **30-Day Free Trial** with full cluster management access on AWS/GCP/Azure |
 
 
 
