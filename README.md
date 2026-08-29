@@ -63,7 +63,7 @@ Modern real-time applications, change-data-capture (CDC) pipelines, microservice
 
 The following list is curated and sorted in **descending order by GitHub stars**. Each badge displays live stars and links directly to the project's stargazers.
 
-| 🌟 Project | ⭐ Star Count | 💻 Language | 📌 Focus Area | 📝 Description |
+| 🌟 Project | ⭐ Star_Count | 💻 Language | 📌 Focus Area | 📝 Description |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Pathway](https://github.com/pathwaycom/pathway)** | [![GitHub stars](https://img.shields.io/github/stars/pathwaycom/pathway?style=social&color=white)](https://github.com/pathwaycom/pathway/stargazers) | Python / Rust | Stream Processing & AI | High-throughput Python stream processing framework with Rust engine for real-time analytics, LLM pipelines, and continuous data processing. |
 | **[Apache Spark](https://github.com/apache/spark)** | [![GitHub stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers) | Scala / Java | Unified Batch & Streaming | Industry-standard analytics engine for large-scale data processing featuring Spark Structured Streaming with exactly-once processing guarantees. |
